@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f1e8">
+    <meta name="description" content="DelaPlana: ideias simples, caminhos leves e inspiração para o seu dia.">
+    <title>DelaPlana — ideias que florescem</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="DelaPlana, início">
+            <span class="brand-mark" aria-hidden="true">d.</span>
+            <span>DelaPlana</span>
+        </a>
+        <nav aria-label="Navegação principal">
+            <a href="#sobre">Nossa ideia</a>
+            <a href="#comece">Comece por aqui</a>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span aria-hidden="true"></span> Um espaço para novas possibilidades</p>
+                <h1 id="hero-title">A vida fica mais leve quando a gente <em>simplifica.</em></h1>
+                <p class="hero-description">
+                    DelaPlana é um convite para tirar as ideias do papel, encontrar clareza
+                    no caminho e dar o próximo passo no seu ritmo.
+                </p>
+                <a class="button button-primary" href="#sobre">
+                    Conheça a DelaPlana <span aria-hidden="true">↗</span>
+                </a>
+                <p class="hero-note">Menos complicação. Mais espaço para florescer.</p>
+            </div>
+
+            <div class="hero-art" role="img" aria-label="Formas abstratas em tons de verde e pêssego">
+                <span class="sun"></span>
+                <span class="shape shape-large"></span>
+                <span class="shape shape-small"></span>
+                <span class="art-caption">um passo de cada vez</span>
+            </div>
+        </section>
+
+        <section class="intro section-wrap" id="sobre" aria-labelledby="intro-title">
+            <div class="section-label"><span>01</span> Nossa ideia</div>
+            <div class="intro-content">
+                <h2 id="intro-title">Um começo tranquilo<br>também é um <em>começo.</em></h2>
+                <div>
+                    <p>
+                        Criamos a DelaPlana para quem acredita que grandes mudanças podem
+                        nascer de passos pequenos. Um lugar acolhedor para organizar planos,
+                        explorar possibilidades e seguir em frente com leveza.
+                    </p>
+                    <a class="text-link" href="#comece">Descubra por onde começar <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="start section-wrap" id="comece" aria-labelledby="start-title">
+            <div class="start-card">
+                <div>
+                    <div class="section-label"><span>02</span> Seu próximo passo</div>
+                    <h2 id="start-title">Toda jornada começa com uma ideia.</h2>
+                    <p>
+                        Faça uma pausa, escolha o que importa agora e comece pelo que
+                        está ao seu alcance. O resto se revela pelo caminho.
+                    </p>
+                </div>
+                <span class="start-decoration" aria-hidden="true">✳</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="#inicio">
+            <span class="brand-mark" aria-hidden="true">d.</span>
+            <span>DelaPlana</span>
+        </a>
+        <p>Ideias que florescem, no seu tempo.</p>
+        <span class="copyright">© {{ current_year }} DelaPlana</span>
+    </footer>
+</body>
+</html>
